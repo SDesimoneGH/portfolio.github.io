@@ -1,0 +1,80 @@
+.formacion__subtitulo {
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.formacion__lista {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+
+.formacion__item {
+    
+    border: 2px gray solid;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.formacion__item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.capa {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),crimson);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.capa h3 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.capa a {
+    margin-top: 20px;
+    color: crimson;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.formacion__item:hover img{
+    transform: scale(1.1);
+
+}
+
+.formacion__item:hover .capa {
+    height: 100%;
+}

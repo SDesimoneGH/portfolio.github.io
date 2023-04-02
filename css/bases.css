@@ -1,0 +1,15 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #001111;
+    color: #e3daf8ec;
+}
+
+.container {
+    
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+img {
+    object-fit: cover;
+}
